@@ -1,0 +1,190 @@
+:root {
+    --primary-color-grey: #6E7886;
+    --primary-color-grey-50: rgba(110, 120, 134, 0.1);
+    --color-icon-comentario: rgb(29, 161, 242);
+    --color-icon-comentario-50: rgba(29, 161, 242, 0.4);
+    --color-icon-retwit: rgb(24, 176, 95);
+    --color-icon-retwit-50: rgba(24, 176, 95, 0.4);
+    --color-icon-like: rgb(224, 36, 94);
+    --color-icon-like-50: rgba(224, 36, 94, 0.4);
+    --color-icon-compartir: rgb(218, 221, 30);
+    --color-icon-compartir-50: rgba(186, 221, 30, 0.4);
+
+}
+
+* {
+    background-color: #15202B;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: rgb(29, 161, 242);
+    text-decoration: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+    max-height: auto;
+}
+
+body {
+    display: flex;
+
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-twitt {
+    border: solid 0.5px;
+    border-color: transparent transparent var(--primary-color-grey) transparent;
+    width: 650px;
+    height: 400px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px;
+}
+
+.container-twitt * {
+    background-color: transparent;
+}
+
+.container-twitt:hover {
+    background-color: var(--primary-color-grey-50);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.container-body {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 75px 1fr;
+}
+
+.container-avatar img {
+    width: 75%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.container-twitt-body .header p {
+    padding: 5px 0px;
+}
+
+.container-twitt-body .body {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-twitt-body .body img {
+    width: 95%;
+    border-radius: 20px;
+    border: solid 0.5px var(--primary-color-grey);
+}
+
+.textGray {
+    color: var(--primary-color-grey);
+}
+
+.container-icons {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* SECCION COMENTARIO */
+.container-icons .icon:nth-child(1):hover svg,
+.container-icons .icon:nth-child(1):hover span {
+    transition-duration: 800ms;
+    border-radius: 50px;
+}
+
+.container-icons .icon:nth-child(1):hover svg {
+    background-color: var(--color-icon-comentario-50);
+    fill: var(--color-icon-comentario);
+}
+
+.container-icons .icon:nth-child(1):hover span {
+    color: var(--color-icon-comentario);
+}
+
+/* SECCION RETWIT  */
+
+.container-icons .icon:nth-child(2):hover svg,
+.container-icons .icon:nth-child(2):hover span {
+    transition-duration: 800ms;
+    border-radius: 50px;
+}
+
+.container-icons .icon:nth-child(2):hover svg {
+    background-color: var(--color-icon-retwit-50);
+    fill: var(--color-icon-retwit);
+}
+
+.container-icons .icon:nth-child(2):hover span {
+    color: var(--color-icon-retwit);
+}
+
+/* SECCION LIKE */
+
+.container-icons .icon:nth-child(3):hover svg,
+.container-icons .icon:nth-child(3):hover span {
+    transition-duration: 800ms;
+    border-radius: 50px;
+}
+
+.container-icons .icon:nth-child(3):hover svg {
+    background-color: var(--color-icon-like-50);
+    fill: var(--color-icon-like);
+}
+
+.container-icons .icon:nth-child(3):hover span {
+    color: var(--color-icon-like);
+}
+
+/* SECCION SHARE */
+.container-icons .icon:nth-child(4):hover svg,
+.container-icons .icon:nth-child(4):hover span {
+    transition-duration: 800ms;
+    border-radius: 50px;
+}
+
+.container-icons .icon:nth-child(4):hover svg {
+    background-color: var(--color-icon-compartir-50);
+    fill: var(--color-icon-compartir);
+}
+
+.container-icons .icon:nth-child(4):hover span {
+    color: var(--color-icon-compartir);
+}
+
+/* FIN ICON SECCTION */
+.icon {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon svg,
+.icon span {
+    color: var(--primary-color-grey);
+    fill: var(--primary-color-grey);
+}
+
+.icon>svg {
+    width: 60%;
+    padding: 5px;
+}
