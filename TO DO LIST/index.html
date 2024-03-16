@@ -4,41 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO APP</title>
+    <title>Todo App</title>
+
+    <!-- Estilos Css -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main class="Container">
-        <section class="User-selector">
-            <select id="Select-Users">
-                <option value="1">Rogelio</option>
-                <option value="2">Chona</option>
-                <option value="3">Oswaldo</option>
-                <option value="4">Ausensio</option>
-                <option value="5">Isaias</option>
-                <option value="6">Grecia</option>
-                <option value="7">Sofia</option>
-                <option value="8">Cristian</option>
-                <option value="9">Eber</option>
-                <option value="10">Alan Oziel</option>
+    <main class="container">
+        <section class="userselects">
+            <select id="select-users">
+                <option value="1">Micaela</option>
+                <option value="2">Ester</option>
+                <option value="3">Mercedes</option>
+                <option value="4">Francisco Javier</option>
+                <option value="5">Elsa</option>
+                <option value="6">Agustin</option>
+                <option value="7">Mario</option>
+                <option value="8">Matias</option>
+                <option value="9">Irene</option>
+                <option value="10">Kevin</option>
+
             </select>
         </section>
-        <section class="User-container" id="User-container">
+        <section class="user-container" id="user-container">
             <!-- Elemento de listas como se deben de ver las tareas -->
             <h3>Información del usuario seleccionado
                 <ul>
-                    <li>Nombre completo: <span>Rogelio Trejo Estrada</span></li>
-                    <li>Email: <span>rogelio.trejo@upa.edu.mx</span></li>
+                    <li>Nombre completo:<span>
+                            Rogelio Trejo Estrada
+                        </span> </li>
+                    <li>Email:
+                        <span>
+                            rogelio.trejo@upa.edu.mx
+                        </span>
+                    </li>
                 </ul>
             </h3>
-
             <button class="btn" id="btndisplay">
                 Mostrar lista de tareas
             </button>
             </div>
         </section>
-        <section class="Task-Container" id="Task-Container">
+        <section class="task-container" id="task-container">
             <!-- Elemento de lista, para mostar las tareas -->
             <h3>Lista de tareas del usuario</h3>
             <ul>

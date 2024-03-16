@@ -21,19 +21,19 @@ option {
     color: #000000;
 }
 
-.User-container h3,
-.Task-container h3 {
+.user-container h3,
+.task-container h3 {
     font-size: 30px;
     font-weight: lighter;
     border: solid #000000 3px;
-    background-image: linear-gradient(to right, #7196da, #079cff);
+    background-color: #7196da;
     padding: 10px;
 }
 
 ul li {
     list-style: none;
     font-size: 25px;
-
+    stop-color: #ff0000;
 }
 
 
@@ -42,11 +42,11 @@ input:checked {
     accent-color: #ffa600;
 }
 
-.User-container li span {
+.user-container li span {
     font-style: italic;
 }
 
-.Task-container {
+.task-container {
     visibility: hidden;
 }
 
