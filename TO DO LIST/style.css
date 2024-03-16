@@ -31,14 +31,11 @@ option {
 }
 
 ul li {
+    list-style: none;
     font-size: 25px;
 
 }
 
-input[type='checkbox'] {
-    background-color: #8b4513;
-    accent-color: #8b4513;
-}
 
 input:checked {
     outline: 2px solid black;
