@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="Container">
+        <section class="User-selector">
+            <select id="Select-Users">
+                <option value="1">Jesus</option>
+                <option value="2">Chona</option>
+                <option value="3">Oswaldo</option>
+                <option value="4">Ausensio</option>
+                <option value="5">Isaias</option>
+                <option value="6">Grecia</option>
+                <option value="7">Sofia</option>
+                <option value="8">Cristian</option>
+                <option value="9">Eber</option>
+                <option value="10">Alan Oziel</option>
+            </select>
+        </section>
+        <section class="User-container" id="User-container">
+            <!-- Elemento de listas como se deben de ver las tareas -->
+            <h3>Información del usuario seleccionado
+                <ul>
+                    <li>Nombre completo: <span>Rogelio Trejo Estrada</span></li>
+                    <li>Email: <span>rogelio.trejo@upa.edu.mx</span></li>
+                </ul>
+            </h3>
+
+            <button class="btn" id="btndisplay">
+                Mostrar lista de tareas
+            </button>
+            </div>
+        </section>
+        <section class="Task-Container" id="Task-Container">
+            <!-- Elemento de lista, para mostar las tareas -->
+            <h3>Lista de tareas del usuario</h3>
+            <ul>
+                <li>
+                    <span>Nombre de la tarea</span>
+                    <input type="checkbox" checked>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

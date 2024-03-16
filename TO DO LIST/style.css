@@ -1,0 +1,68 @@
+* {
+    background-color: #353535;
+    color: #f0f0f0;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+select {
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #000000;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+option {
+    text-align: justify;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.User-container h3,
+.Task-container h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    border: solid #000000 3px;
+    background-image: linear-gradient(to right, #7196da, #079cff);
+    padding: 10px;
+}
+
+ul li {
+    font-size: 25px;
+
+}
+
+input[type='checkbox'] {
+    background-color: #8b4513;
+    accent-color: #8b4513;
+}
+
+input:checked {
+    outline: 2px solid black;
+    accent-color: #ffa600;
+}
+
+.User-container li span {
+    font-style: italic;
+}
+
+.Task-container {
+    visibility: hidden;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.btn:hover {
+    font-size: 15px;
+    padding: 15px;
+    background-color: white;
+    color: #000000;
+    font-style: italic;
+    margin-left: 20px;
+}
